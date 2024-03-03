@@ -16,3 +16,5 @@ export * from './SvgPoison'
 export * from './SvgPsychic'
 export * from './SvgFighting'
 export * from './SvgElectric'
+
+export * from './SvgPokeBall'
