@@ -15,13 +15,13 @@ export function PokeList() {
 		setPage(page - 1)
 	}
 	return (
-		<main className="space-y-5 bg-[#000021] pb-10">
-			<section className="relative grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5 space-y-24 rounded-tl-3xl rounded-tr-3xl  p-10 ">
+		<>
+			<section className="relative z-10 grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5 space-y-24 p-10 ">
 				{pokemons?.map((pokemon) => (
 					<PokeCard key={pokemon.name} {...pokemon} />
 				))}
 			</section>
-			<div className="mx-auto flex w-full justify-center">
+			<section className="mx-auto flex w-full justify-center">
 				<button
 					type="button"
 					onClick={prevPage}
@@ -36,7 +36,7 @@ export function PokeList() {
 				>
 					Next
 				</button>
-			</div>
-		</main>
+			</section>
+		</>
 	)
 }
