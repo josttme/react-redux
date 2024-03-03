@@ -12,3 +12,13 @@ body {
 	font-display: swap;
 	priority: true;
 }
+.cardSkeleton {
+	background: linear-gradient(70deg, #0080ff 15%, #0155c4 50%, #0080ff 75%);
+	background-size: 200% 100%;
+	animation: 1s shine linear infinite;
+}
+@keyframes shine {
+	to {
+		background-position-x: -200%;
+	}
+}
