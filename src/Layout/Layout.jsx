@@ -1,11 +1,12 @@
 import { Outlet } from 'react-router-dom'
-import { Header, Footer } from '../components'
+import { Header, Footer, BgVideo } from '../components'
 
 export function Layout() {
 	return (
 		<>
 			<Header />
 			<Outlet />
+			<BgVideo />
 			<Footer />
 		</>
 	)
