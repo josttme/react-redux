@@ -10,6 +10,7 @@ export function BgVideo() {
 			>
 				<source src="/poke.mp4#t=0.1" type="video/mp4" alt="Pokemon video" />
 			</video>
+			<div className="absolute inset-0 bg-black/20"></div>
 		</section>
 	)
 }
