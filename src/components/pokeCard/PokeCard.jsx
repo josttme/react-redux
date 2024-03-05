@@ -25,6 +25,9 @@ import {
 	SvgFighting,
 	SvgElectric
 } from '../icons'
+import { FavoriteButton } from './FavoriteButton'
+
+import PropTypes from 'prop-types'
 
 const pokeTypesColorIcons = {
 	bug: { color: '#94BC4A', icon: <SvgBug /> },
@@ -49,29 +52,37 @@ const pokeTypesColorIcons = {
 
 export function PokeCard(pokemon) {
 	const pokemonData = getPokemon(pokemon)
-
 	if (!pokemonData) return <CardSkeleton /> // CardSkeleton
+	return <Card {...pokemonData} />
+}
 
-	const { name, image, types, height, weight } = pokemonData
+export function Card(pokemon) {
+	const { name, image, types, height, weight } = pokemon
 
 	const heightInMeters = height / 10 // Altura en metros
 
 	const weightInKg = weight / 10 // Peso en kilogramos
 
-	const pokemonTypes = types.map((type) => type.type.name)
-
+	const pokemonTypes = types?.map((type) => type.type.name)
 	return (
 		<div
 			style={PokeBgGradient(pokemonTypes, pokeTypesColorIcons)}
-			className="group grid h-[27rem] cursor-pointer gap-4  self-end rounded-3xl border border-transparent pb-5 saturate-[1.2] duration-200  ease-in-out hover:border-current"
+			className="group grid h-[28rem] cursor-pointer  self-end rounded-3xl border border-transparent pb-5 saturate-[1.2] duration-200  ease-in-out hover:border-current"
 		>
 			<PokeImage image={image} />
 
-			<h2 className="text-center text-4xl font-semibold capitalize">{name}</h2>
+			<h2 className=" h-min overflow-hidden text-ellipsis whitespace-nowrap px-1 text-center text-4xl font-semibold capitalize">
+				{name}
+			</h2>
 
+			<FavoriteButton pokemon={pokemon} />
 			<PokeTypes types={types} pokeTypesColorIcons={pokeTypesColorIcons} />
 
 			<HeightWeight height={heightInMeters} weight={weightInKg} />
 		</div>
 	)
+}
+
+PokeCard.propTypes = {
+	pokemon: PropTypes.object
 }
