@@ -6,8 +6,11 @@ import { Pagination } from './pagination'
 export function PokeList() {
 	const [page, setPage] = useState(0)
 	useEffect(() => {
-		window.scrollTo(0, 550)
+		window.scrollTo(0, 1000)
 	}, [page])
+	useEffect(() => {
+		window.scrollTo(0, 0)
+	}, [])
 	const { data } = useGetTodosQuery(page)
 	if (!data) return <h1>Loading...</h1>
 	const pokemons = data?.results
