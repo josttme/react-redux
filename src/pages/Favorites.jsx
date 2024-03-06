@@ -12,7 +12,7 @@ export function Favorites() {
 
 	return (
 		<main className="rounded-tl-3xl rounded-tr-3xl bg-[#000021]">
-			<section className="relative z-10 grid grid-cols-[repeat(auto-fit,minmax(300px,320px))] gap-5 space-y-24 p-10 ">
+			<section className="relative z-10 grid grid-cols-[repeat(auto-fit,minmax(300px,320px))] justify-center gap-5 space-y-24 p-10 ">
 				{pokemons?.map((pokemon) => (
 					<Card key={pokemon.id} {...pokemon} />
 				))}
