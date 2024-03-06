@@ -18,3 +18,5 @@ export * from './SvgFighting'
 export * from './SvgElectric'
 
 export * from './SvgPokeBall'
+export * from './SvgLeft'
+export * from './SvgDoubleLeft'
