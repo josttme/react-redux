@@ -67,7 +67,7 @@ export function Card(pokemon) {
 	return (
 		<div
 			style={PokeBgGradient(pokemonTypes, pokeTypesColorIcons)}
-			className="group grid h-[28rem] cursor-pointer  self-end rounded-3xl border border-transparent pb-5 saturate-[1.2] duration-200  ease-in-out hover:border-current"
+			className="group grid h-[28rem] cursor-pointer  self-end rounded-3xl border border-transparent pb-5 saturate-[1.2] duration-200  ease-in-out lg:hover:border-current"
 		>
 			<PokeImage image={image} />
 

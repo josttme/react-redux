@@ -12,7 +12,7 @@ export function PokeImage({ image }) {
 		<div className=" relative mx-auto -mb-5 -mt-28 grid h-80 w-full content-end justify-center  ">
 			<img
 				src={src}
-				className={`${loaded && 'opacity-100'} w-full opacity-0 drop-shadow-lg saturate-[1.5] transition-all duration-200 ease-in-out group-hover:-translate-y-5 group-hover:scale-110`}
+				className={`${loaded && 'opacity-100'} w-full opacity-0 drop-shadow-lg saturate-[1.5] transition-all duration-200 ease-in-out lg:group-hover:-translate-y-5 lg:group-hover:scale-110`}
 				onLoad={() => setLoaded(true)}
 				alt="Pokemon Image"
 			/>

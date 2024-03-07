@@ -7,7 +7,7 @@ export function PokeType({ type, icon, color }) {
 				color,
 				backgroundColor: `${color}30`
 			}}
-			className="text-md flex h-10 w-28 items-center justify-center gap-2  rounded-2xl border border-transparent p-1 font-semibold uppercase duration-150 ease-in-out group-hover:border-current"
+			className="text-md flex h-10 w-28 items-center justify-center gap-2  rounded-2xl border border-transparent p-1 font-semibold uppercase duration-150 ease-in-out lg:group-hover:border-current"
 		>
 			<div className="h-4 w-4 fill-current">{icon}</div>
 			{type}
