@@ -27,18 +27,3 @@ export const likesSlice = createSlice({
 	}
 })
 export const { toggleLike } = likesSlice.actions
-
-/* export const { toggleLike } = likesSlice.actions
-export default likesSlice.reducer
- */
-/* export const userSlice = createSlice({
-  name:'user',
-  initialState: localStorage.getItem(LocalStorageEntities.user_info)
-    ? JSON.parse(localStorage.getItem(LocalStorageEntities.user_info) as string)
-    : [],
-  reducers: {
-    createUSer: (state, action) => {
-
-    }
-  }
-}) */
