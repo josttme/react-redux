@@ -31,7 +31,7 @@ export function PokeList() {
 
 	return (
 		<>
-			<section className="relative z-10  grid grid-cols-[repeat(auto-fit,minmax(300px,320px))] justify-center gap-5 space-y-20 px-2 pb-14 pt-20 lg:p-10 ">
+			<section className="grid-cols-card relative  z-10 grid justify-center gap-5 space-y-20 px-2 pb-14 pt-20 lg:p-10 ">
 				{pokemons?.map((pokemon) => (
 					<PokeCard key={pokemon.name} {...pokemon} />
 				))}

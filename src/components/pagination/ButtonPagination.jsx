@@ -6,7 +6,7 @@ export function ButtonPagination({
 	handleClick,
 	children
 }) {
-	const buttonStyle = `${disabled ? 'cursor-not-allowed bg-gray-600 opacity-60' : 'lg:hover:bg-[#0080ff]'} ${position}  bg-[#00388f]  lg:gap-1 py-2  lg:text-lg text-white flex items-center border-white/40 w-full justify-center active:bg-[#0080ff]`
+	const buttonStyle = `${disabled ? 'cursor-not-allowed bg-gray-600 opacity-60' : 'lg:hover:bg-blue-secondary active:bg-blue-secondary'} ${position}  bg-blue-primary lg:gap-1 py-2  lg:text-lg text-text-color flex items-center border-white/40 w-full justify-center `
 	return (
 		<button
 			type="button"

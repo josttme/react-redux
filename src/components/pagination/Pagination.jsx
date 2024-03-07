@@ -23,7 +23,7 @@ export function Pagination({ page, nextPage, prevPage }) {
 				Prev
 			</ButtonPagination>
 
-			<span className="xs:bg-red-200 grid  aspect-square h-12 w-12 place-content-center self-center bg-[#00388f] p-2 text-xl text-white">
+			<span className="xs:bg-red-200 bg-blue-primary  text-text-color grid aspect-square h-12 w-12 place-content-center self-center p-2 text-xl">
 				{page + 1}
 			</span>
 			<ButtonPagination

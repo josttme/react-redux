@@ -11,7 +11,7 @@ export function Header() {
 					alt="Pokemon Logo"
 				/>
 			</div>
-			<section className="max-w-4xl space-y-5 rounded-3xl bg-[#000021] px-5 py-6 text-[#eae8e5] lg:ml-5 lg:px-10">
+			<section className="bg-brand-primary text-text-color max-w-4xl space-y-5 rounded-3xl px-5 py-6 lg:ml-5 lg:px-10">
 				<h1 className="text-center text-4xl font-bold ">PokeRedux</h1>
 				<p className="text-lg">
 					Explora el mundo Pokémon con esta aplicación web, desarrollada con
@@ -20,20 +20,20 @@ export function Header() {
 					fácil y rápida, guarda tus favoritos.
 				</p>
 				<section className="flex flex-col justify-between space-y-5 md:flex-row ">
-					<ul className="list-inside list-disc text-lg marker:text-[#0080ff]">
+					<ul className="marker:text-blue-secondary list-inside list-disc text-lg">
 						Tecnologías utilizadas:
 						<li>ReactJS</li>
 						<li>Tailwind</li>
 						<li>Redux</li>
 						<li>RTK Query</li>
 					</ul>
-					<ul className="list-inside list-disc text-lg marker:text-[#0080ff]">
+					<ul className="marker:text-blue-secondary list-inside list-disc text-lg">
 						Funcionalidades principales:
 						<li>Manejo de estado con Redux</li>
 						<li>Cacheo de la API con RTK Query</li>
 						<li>Guardar favoritos en local storage</li>
 					</ul>
-					<ul className="list-inside list-disc text-lg marker:text-[#0080ff]">
+					<ul className="marker:text-blue-secondary list-inside list-disc text-lg">
 						Propósito del proyecto:
 						<li>Practicar Redux</li>
 					</ul>

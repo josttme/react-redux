@@ -21,7 +21,7 @@ export function FavoriteButton({ pokemon }) {
 		dispatch(toggleLike({ pokemon }))
 	}
 	const favorite = isLiked
-		? 'fill-[#ff234e] stroke-[#ff234e]'
+		? 'fill-red-heart stroke-red-heart'
 		: 'fill-current stroke-current'
 	return (
 		<div className="grid justify-center">
@@ -32,7 +32,7 @@ export function FavoriteButton({ pokemon }) {
 				className=" grid h-8 w-8 place-content-center rounded-full "
 			>
 				<SvgHeart
-					className={`${favorite} grid h-7 w-7 place-content-center stroke-[1.6] duration-75  lg:hover:fill-[#ff234e] lg:hover:stroke-[#ff234e]`}
+					className={`${favorite} lg:hover:fill-red-heart lg:hover:stroke-red-heart grid h-7 w-7 place-content-center  stroke-[1.6] duration-75`}
 				/>
 			</button>
 		</div>
