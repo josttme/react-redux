@@ -7,7 +7,7 @@ export function Favorites() {
 	const pokemons = useSelector((state) => state.pokeLikes.likes)
 	if (!pokemons) return <h1>Loading...</h1>
 	useEffect(() => {
-		window.scrollTo(0, 1000)
+		window.scrollTo(0, 800)
 	}, [])
 
 	return (

@@ -6,7 +6,7 @@ import { Pagination } from './pagination'
 export function PokeList() {
 	const [page, setPage] = useState(0)
 	useEffect(() => {
-		window.scrollTo(0, 1000)
+		window.scrollTo(0, 800)
 	}, [page])
 	useEffect(() => {
 		window.scrollTo(0, 0)
